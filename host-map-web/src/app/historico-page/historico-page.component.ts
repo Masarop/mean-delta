@@ -15,7 +15,7 @@ export class HistoricoPageComponent implements OnInit {
 
 
 
-    constructor(private _router: ActivatedRoute, private httpClient: HttpClientService) {
+    constructor(private _router: Router, private httpClient: HttpClientService) {
     }
 
 
@@ -24,7 +24,7 @@ export class HistoricoPageComponent implements OnInit {
 
 
 
-        router.navigateByUrl("map/:"+ip);
+        _router.navigateByUrl(["/map",ip]);
 
     }
 

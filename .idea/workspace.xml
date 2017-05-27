@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ca5dc2b-139f-4596-9fdd-c6039bd57f03" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-map-api/routes/localizacao.route.js" afterPath="$PROJECT_DIR$/host-map-api/routes/localizacao.route.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-map-web/src/app/app.module.ts" afterPath="$PROJECT_DIR$/host-map-web/src/app/app.module.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-map-web/src/app/historico-page/historico-page.component.html" afterPath="$PROJECT_DIR$/host-map-web/src/app/historico-page/historico-page.component.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-map-web/src/app/historico-page/historico-page.component.ts" afterPath="$PROJECT_DIR$/host-map-web/src/app/historico-page/historico-page.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-map-web/src/app/http-client.service.ts" afterPath="$PROJECT_DIR$/host-map-web/src/app/http-client.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-map-web/src/app/map-page/map-page.component.ts" afterPath="$PROJECT_DIR$/host-map-web/src/app/map-page/map-page.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/host-map-web/src/app/search-bar/search-bar.component.ts" afterPath="$PROJECT_DIR$/host-map-web/src/app/search-bar/search-bar.component.ts" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -48,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/host-map-web/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
-              <caret line="21" column="56" lean-forward="false" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+              <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
               </folding>
@@ -69,8 +65,8 @@
       <file leaf-file-name="historico-page.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/host-map-web/src/app/historico-page/historico-page.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+            <state relative-caret-position="297">
+              <caret line="26" column="41" lean-forward="false" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -90,21 +86,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="historico-page.component.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="historico-page.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/host-map-web/src/app/historico-page/historico-page.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="45" column="36" lean-forward="true" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+            <state relative-caret-position="470">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search-bar.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="search-bar.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/host-map-web/src/app/search-bar/search-bar.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="380">
+              <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -140,10 +136,10 @@
         <option value="$PROJECT_DIR$/host-map-api/routes/localizacao.route.js" />
         <option value="$PROJECT_DIR$/host-map-web/src/app/map-page/map-page.component.ts" />
         <option value="$PROJECT_DIR$/host-map-web/src/app/http-client.service.ts" />
-        <option value="$PROJECT_DIR$/host-map-web/src/app/search-bar/search-bar.component.ts" />
-        <option value="$PROJECT_DIR$/host-map-web/src/app/historico-page/historico-page.component.html" />
         <option value="$PROJECT_DIR$/host-map-web/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/host-map-web/src/app/search-bar/search-bar.component.ts" />
         <option value="$PROJECT_DIR$/host-map-web/src/app/historico-page/historico-page.component.ts" />
+        <option value="$PROJECT_DIR$/host-map-web/src/app/historico-page/historico-page.component.html" />
       </list>
     </option>
   </component>
@@ -392,12 +388,12 @@
       <option name="presentableId" value="Default" />
       <updated>1495891342928</updated>
       <workItem from="1495891344975" duration="1912000" />
-      <workItem from="1495893294220" duration="16801000" />
+      <workItem from="1495893294220" duration="17346000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18713000" />
+    <option name="totallyTimeSpent" value="19258000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -605,24 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/host-map-web/src/app/search-bar/search-bar.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/host-map-web/src/app/historico-page/historico-page.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="45" column="36" lean-forward="true" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/host-map-api/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -642,27 +620,45 @@
     <entry file="file://$PROJECT_DIR$/host-map-web/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="21" column="56" lean-forward="false" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
           <folding>
             <element signature="e#0#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/host-map-web/src/app/search-bar/search-bar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="23" column="29" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/host-map-web/src/app/historico-page/historico-page.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+        <state relative-caret-position="297">
+          <caret line="26" column="41" lean-forward="false" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/host-map-web/src/app/search-bar/search-bar.component.ts">
+    <entry file="file://$PROJECT_DIR$/host-map-web/src/app/search-bar/search-bar.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="216">
+          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/host-map-web/src/app/historico-page/historico-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding />
         </state>
       </provider>
