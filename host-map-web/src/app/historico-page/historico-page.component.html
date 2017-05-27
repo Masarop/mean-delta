@@ -12,15 +12,14 @@
         <div class="col-md-2">
             <span>Longitude:</span>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-1">
             <span>Data:</span>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-1">
             <span>Hora:</span>
         </div>
     </div>
-    <div class="row">
-        <div *ngFor="let loc of historico; let i = index;">
+    <div class="row" *ngFor="let loc of historico; let i = index;">
             <div class="row">
                 <div class="col-md-2">
                     <span>{{loc.dominio}}</span>
@@ -34,13 +33,13 @@
                 <div class="col-md-2">
                     <span>{{loc.lon}}</span>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-1">
                     <span>{{loc.dataHora | date: 'dd/MM/yyyy}}</span>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-1">
                     <span>{{loc.dataHora | date: 'HH/mm/ss}}</span>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
