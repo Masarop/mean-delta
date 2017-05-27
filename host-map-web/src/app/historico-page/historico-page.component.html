@@ -18,28 +18,32 @@
         <div class="col-md-1">
             <span>Hora:</span>
         </div>
-    </div>
-    <div class="row" *ngFor="let loc of historico; let i = index;">
-            <div class="row">
-                <div class="col-md-2">
-                    <span>{{loc.dominio}}</span>
-                </div>
-                <div class="col-md-2">
-                    <span>{{loc.query}}</span>
-                </div>
-                <div class="col-md-2">
-                    <span>{{loc.lat}}</span>
-                </div>
-                <div class="col-md-2">
-                    <span>{{loc.lon}}</span>
-                </div>
-                <div class="col-md-1">
-                    <span>{{loc.dataHora | date: 'dd/MM/yyyy}}</span>
-                </div>
-                <div class="col-md-1">
-                    <span>{{loc.dataHora | date: 'HH/mm/ss}}</span>
-                </div>
-            </div>
+        <div class="col-md-2">
+            <span>Ações:</span>
         </div>
     </div>
-
+    <div class="row" *ngFor="let loc of historico;">
+        <div class="col-md-2">
+            <span>{{loc.dominio}}</span>
+        </div>
+        <div class="col-md-2">
+            <span>{{loc.query}}</span>
+        </div>
+        <div class="col-md-2">
+            <span>{{loc.lat}}</span>
+        </div>
+        <div class="col-md-2">
+            <span>{{loc.lon}}</span>
+        </div>
+        <div class="col-md-1">
+            <span>{{loc.dataHora | date: 'dd/MM/yyyy'}}</span>
+        </div>
+        <div class="col-md-1">
+            <span>{{loc.dataHora | date: 'HH:mm:ss'}}</span>
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-primary"
+                    (click)="consultar(loc.ip)">Consultar</button>
+        </div>
+    </div>
+</div>

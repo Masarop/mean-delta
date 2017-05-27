@@ -9,34 +9,26 @@ export class HttpClientService {
     }
 
     get(url: string) {
-        return this._http.get(url, {headers: HttpClientService.getHeaders()})
+        return this._http.get(url)
             .map(response => response.json())
             .catch(error => Observable.throw(error.json()));
     }
 
     post(url: string, data: any) {
-        const body = JSON.stringify(data);
-
-        return this._http.post(url, body, {headers: HttpClientService.getHeaders()})
+        return this._http.post(url, data)
             .map(response => response.json())
             .catch(error => Observable.throw(error.json()));
     }
 
     put(url: string, data: any) {
-        const body = JSON.stringify(data);
-
-        return this._http.put(url, body, {headers: HttpClientService.getHeaders()})
+        return this._http.put(url, data)
             .map(response => response.json())
             .catch(error => Observable.throw(error.json()));
     }
 
     delete(url: string) {
-        return this._http.delete(url, {headers: HttpClientService.getHeaders()})
+        return this._http.delete(url)
             .map(response => response.json())
             .catch(error => Observable.throw(error.json()));
-    }
-
-    static getHeaders(): Headers {
-        return new Headers();
     }
 }

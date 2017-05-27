@@ -6,7 +6,13 @@ let Localizacao = require('../model/localizacao.model');
 
 
 router.get('/',(req,res,next)=>{
-    res.status(200).json({nome:"Átilla"});
+    LocalizacaoService
+        .consultar()
+        .then((doc)=>{
+            res.status(200).json(doc);
+        },(err)=>{
+            res.status(500).json(err);
+        });
 });
 
 router.post('/',(req,res,next)=>{

@@ -3,9 +3,9 @@ import {Localizacao} from "../model/localizacao.model";
 import {HttpClientService} from "../http-client.service";
 
 @Component({
-  selector: 'fd-map-page',
-  templateUrl: './map-page.component.html',
-  styleUrls: ['./map-page.component.css']
+    selector: 'fd-map-page',
+    templateUrl: './map-page.component.html',
+    styleUrls: ['./map-page.component.css']
 })
 export class MapPageComponent {
 
@@ -19,7 +19,7 @@ export class MapPageComponent {
 
         this.httpClient
             .post('http://localhost:3000/api/localizacao', localizacao)
-            .subscribe((localizacao)=>{
+            .subscribe((localizacao) => {
                 console.log(localizacao);
             });
     }
