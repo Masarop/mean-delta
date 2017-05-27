@@ -1,13 +1,26 @@
-
 const express = require('express');
-let router = express.Router();
+const router = express.Router();
+const LocalizacaoService=require('../services/localizacao.service')
+let Localizacao = require('../model/localizacao.model');
+
+
 
 router.get('/',(req,res,next)=>{
     res.status(200).json({nome:"Átilla"});
 });
 
 router.post('/',(req,res,next)=>{
-    let localizacao = req.body;
+    let localizacao = new Localizacao(req.body);
+
+    LocalizacaoService
+        .salvar(localizacao)
+        .then((doc)=>{
+        res.status(201).json(doc);
+        },(err)=>{
+        res.status(500).json(err);
+        });
+
+
     res.status(201).json(localizacao);
 });
 

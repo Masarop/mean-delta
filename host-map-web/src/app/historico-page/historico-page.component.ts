@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Localizacao} from "../model/localizacao.model";
+import {HttpClientService} from "../http-client.service";
 
 @Component({
     selector: 'fd-historico-page',
@@ -10,17 +11,15 @@ export class HistoricoPageComponent implements OnInit {
 
     historico: Localizacao[];
 
-    constructor() {
+    constructor(private httpClient: HttpClientService) {
     }
 
     ngOnInit() {
-        this.historico = [
-            new Localizacao(-16.701, -49.2668, 'Google', '177.157.94.167', '2017-05-20 16:54:00', 'United States'),
-            new Localizacao(-16.701, -49.2668, 'Google', '177.157.94.167', '2017-05-20 16:54:00', 'United States'),
-            new Localizacao(-16.701, -49.2668, 'Google', '177.157.94.167', '2017-05-20 16:54:00', 'United States'),
-            new Localizacao(-16.701, -49.2668, 'Google', '177.157.94.167', '2017-05-20 16:54:00', 'United States'),
-            new Localizacao(-16.701, -49.2668, 'Google', '177.157.94.167', '2017-05-20 16:54:00', 'United States'),
-            new Localizacao(-16.701, -49.2668, 'Google', '177.157.94.167', '2017-05-20 16:54:00', 'United States')
-        ];
+        this.httpClient
+            .get('http://localhost:3000/api/localizacao')
+            .subscribe((docs)=>{
+            this.historico=docs
+            });
+        ;
     }
 }
