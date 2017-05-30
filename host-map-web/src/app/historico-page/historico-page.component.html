@@ -6,10 +6,10 @@
         <div class="col-md-2">
             <span>IP:</span>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-1">
             <span>Latitude:</span>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-1">
             <span>Longitude:</span>
         </div>
         <div class="col-md-1">
@@ -19,6 +19,9 @@
             <span>Hora:</span>
         </div>
         <div class="col-md-2">
+            <span>Servidor</span>
+        </div>
+        <div class="col-md-1">
             <span>Ações:</span>
         </div>
     </div>
@@ -29,10 +32,10 @@
         <div class="col-md-2">
             <span>{{loc.query}}</span>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-1">
             <span>{{loc.lat}}</span>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-1">
             <span>{{loc.lon}}</span>
         </div>
         <div class="col-md-1">
@@ -42,10 +45,11 @@
             <span>{{loc.dataHora | date: 'HH:mm:ss'}}</span>
         </div>
         <div class="col-md-2">
-            <button type="button" class="btn btn-primary"
-                    (click)="consultar(loc.ip)">Consultar</button>
-            <button type="button" class="btn btn-danger"
-                    (click)="deletar(loc)">Excluir</button>
+            <span>{{loc.org}}</span>
+        </div>
+        <div class="col-md-2">
+            <button type="button" class="btn btn-primary" (click)="consultar(loc.dominio)">Consultar</button>
+            <button type="button" class="btn btn-danger" (click)="deletar(loc)">Excluir</button>
         </div>
     </div>
 </div>
