@@ -1,7 +1,9 @@
-import {Component, OnInit, EventEmitter, Output} from '@angular/core';
+
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {HttpClientService} from "../http-client.service";
 import {Localizacao} from "../model/localizacao.model";
-import {ActivatedRoute, ActivatedRouteSnapshot} from "@angular/router";
+import {Subscription} from "rxjs/Subscription";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
     selector: 'fd-search-bar',
@@ -10,21 +12,26 @@ import {ActivatedRoute, ActivatedRouteSnapshot} from "@angular/router";
 })
 export class SearchBarComponent implements OnInit {
 
-    dominio: String;
 
+    @Input()
+    dominio: String;
+    private subscription : Subscription;
+    
     @Output()
     localizacao: EventEmitter<Localizacao> = new EventEmitter<Localizacao>();
-
     constructor(private _activeRoute: ActivatedRoute, private httpClient: HttpClientService) {
     }
 
     ngOnInit() {
-
-        if(this.ip){
-            this.pesquisar();
-        }
-
-
+       this._activeRoute.params.subscribe((params) => {
+       let query = params['query'];
+       if (query){
+         this.dominio = query;
+         this.pesquisar();
+       }
+      console.log(query);
+     });
+ 
     }
 
     pesquisar(): void {
