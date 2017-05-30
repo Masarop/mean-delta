@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {Localizacao} from "../model/localizacao.model";
 import {HttpClientService} from "../http-client.service";
 
@@ -14,11 +14,11 @@ export class MapPageComponent {
     constructor(private httpClient: HttpClientService) {
     }
 
-    exibirLocalizacao(localizacao: Localizacao): void {
+    exibirLocalizacao(localizacao): void {
         this.localizacao = localizacao;
 
         this.httpClient
-            .post('http://localhost:3000/api/localizacao', localizacao)
+            .post('http://localhost:3000/api/localizacao', this.localizacao)
             .subscribe((localizacao) => {
                 console.log(localizacao);
             });
