@@ -19,7 +19,7 @@ export const rotas: Routes = [
     {path: '', redirectTo: '/map', pathMatch: 'full'},
     {path: 'map', component: MapPageComponent},
     {path: 'historico', component: HistoricoPageComponent},
-    {path: '/map/:ip', component:MapPageComponent}
+    {path: 'map/:query', component:MapPageComponent}
 ];
 
 @NgModule({
