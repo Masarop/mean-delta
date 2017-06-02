@@ -9,8 +9,10 @@ router.get('/',(req,res,next)=>{
     LocalizacaoService
         .consultar()
         .then((doc)=>{
+                     //retorna o status de OK
             res.status(200).json(doc);
         },(err)=>{
+                    //retorna o status de Erro
             res.status(500).json(err);
         });
 });
@@ -21,16 +23,19 @@ router.post('/',(req,res,next)=>{
     LocalizacaoService
         .salvar(localizacao)
         .then((doc)=>{
+                     //retorna o status de OK
         res.status(201).json(doc);
         },(err)=>{
+                    //retorna o status de Erro
         res.status(500).json(err);
         });
 
-
+                     //retorna o status de OK
     res.status(201).json(localizacao);
 });
 
 router.put('/',(req,res,next)=>{
+                 //retorna o status de OK
     res.status(200).json({nome:"Átilla"});
 });
 
