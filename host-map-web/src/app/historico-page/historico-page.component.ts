@@ -27,7 +27,7 @@ export class HistoricoPageComponent implements OnInit {
         this._router.navigate(['/map', query]);
     }
 
-    excluir(localizacao): void{
+    deletar(localizacao): void{
 
         this.httpClient.delete('http://localhost:3000/api/localizacao?id='+localizacao._id)
             .subscribe(
