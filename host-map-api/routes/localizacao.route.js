@@ -42,7 +42,7 @@ router.put('/',(req,res,next)=>{
 router.delete('/',(req,res,next)=>{
     
     LocalizacaoService
-        .deletar(req.param('id'))
+        .excluir(req.param('id'))
         .then(
          (doc) => {
              //retorna o status de OK
