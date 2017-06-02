@@ -35,6 +35,19 @@ router.put('/',(req,res,next)=>{
 });
 
 router.delete('/',(req,res,next)=>{
-    res.status(200).json({nome:"Átilla"});
+    
+    LocalizacaoService
+        .excluir(req.param('id'))
+        .then(
+         (doc) => {
+             //retorna o status de OK
+             res.status(200).json({situacao: "removido"})
+         },
+         (err) => {
+             //retorna o status de Erro
+             res.status(500).json(err)
+         }
+     );
 });
+     
 module.exports=router;
